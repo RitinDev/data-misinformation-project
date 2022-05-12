@@ -189,25 +189,40 @@
               specifically, as they are home to a large volume of misinformation and fact-checked news trying to dominate the space.
               
             </p> 
-            <p>The first elements we looked for were fearmongering and enraging content. Manipulating feelings is an old tactic for social media, and Facebook 
+            <p>The first elements we looked for were fearmongering and enraging content. Manipulating feeling is an old tactic for social media, and Facebook 
               even revealed to engage users by making them angry in leaked papers. Whether you agree or not with the content, you will pay attention to it and 
-              spread it to more people. It is a win-win situation for the publisher, and the only way to stop it is using the old internet adage "do not feed 
-              the trolls." But for us trying to identify fake content, this is also very useful. There are tools that classify text according to its supposed 
-              emotional content. They work assigning values to words according to content pre-classified by humans. The first tool we tested was sentiment 
-              analysis algorithms, which seems like an oxymoron. The one we used classify text between positive, negative or neutral. We should then expect 
-              more negative content under the fake news database, and more neutral ones in the truthful set. This is what we found:
-            
+              spread it to more people. It is a win-win situation for the publisher, and the only way to stop it is by using the old internet adage "do not 
+              feed the trolls." But for us trying to identify fake content, this is also very useful. Some tools classify text according to its supposed emotional
+              content. They work by assigning values to words according to content pre-classified by humans. The first tool we tested was sentiment analysis 
+              algorithms, which seems like an oxymoron. The one we used to classify text between positive, negative, or neutral. We should then expect more negative
+              content under the fake news database and more neutral tones in the truthful set. This is what we found:
             </p>
             
-            <p>Tweets are short, with a limit of 280 characters. Although we found a pattern, shorter texts do not provide results as reliable as long articles.
-              Another class of algorithms also evaluates feelings, called Mood Analysis, but it is more sophisticated. Rather than classifying as positive or 
-              negative, it guesses what feeling it portraits. There are six classifications for the one we used: fatigue, vigour, confusion, tension, anger, and 
+            <p>Tweets are short, with a limit of 280 characters. Although we found a pattern, shorter texts do not provide results as reliable as long articles. 
+              Another class of algorithms also evaluates feelings, called Mood Analysis, but it is more sophisticated. Rather than classifying it as positive or 
+              negative, it guesses what feeling it portrays. There are six classifications for the one we used: fatigue, vigor, confusion, tension, anger, and 
               depression.
             </p>
             
             <p>We should expect those results, but it is interesting to see that computers can capture the nature of the pandemic. The content we scraped is related
-              to a world pandemic. Whether you are insatisfied with the millions of deaths or the limitations quarantine imposed to your lifestyle, sadness and 
-              depression are understandable. 
+              to a world pandemic. Whether you are unsatisfied with the millions of deaths or the limitations quarantine imposed on your lifestyle, sadness and 
+              depression are understandable.
+            </p>
+            
+            <p>Curiously, both tweet groups express similar feelings. Sometimes, the difference between fake and correct is hard to perceive. For this work,
+              we consider fact-checking the leading tool to define what is misleading. As information is updated, recent or even checked data can become fake
+              news if found to be wrong and later shared to mislead. No matter how well we choose our sources, we are bound to find fake news published as 
+              reliable information. Outdated information may skew the differences since its goal is not to mislead when created, but it will still arise as
+              fake after being fact-checked.
+
+            </p>
+            
+            <p>
+              Sentiments are hard to analyze with computers, no surprise at this point, but patterns are easy to be found. While trustworthy information will 
+              focus on numerical data and its interpretation, successful fake news will direct the blame to the ones you love to hate, or ignore the disease 
+              as a hoax created by this same group. Keywords are analyzed by searching the most common words in each database, and how different their frequency 
+              is in each set. Intuitively, if you are familiar with extremist speeches, the differences in vocabulary and focus should be painfully easy to 
+              imagine. Having this in mind, we verified if the data agreed with us.
             </p>
                
 

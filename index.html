@@ -419,18 +419,44 @@
               vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
               
-            <p>Our analysis showed that true news is much more likely to contain all of emojis, hyperlinks, ’#’s, and ‘@’s. 
-              The use of emojis (primarily, number or arrow ones) by news outlets to list various facts linked to Covid 19 
-              cases and testing could be ascribed to this. It's also possible to explain the abundance of hyperlinks in (true) 
-              tweets by pointing out that true tweets tend to end with links to the news stories or articles on the news 
-              channel’s official website. True tweets also contain ‘@’ signs more frequently, primarily because they tag 
-              the author of the news article in the tweet itself. We could not find a similar logic for the comparatively 
-              larger number of ‘#’s present in true tweets, but we believe that a deeper analysis can find an answer to 
-              that question.
+            <p>Our analysis showed that true news is much more likely to contain all emojis, hyperlinks,’#’s, and ‘@’s. 
+              The use of emojis (primarily, number or arrow ones) by news outlets to list various facts linked to Covid-19 
+              cases and testing could be ascribed to this. It's also possible to explain the abundance of hyperlinks in 
+              (true) tweets by pointing out that true tweets tend to end with links to the news stories or articles on the 
+              news channel’s official website. True tweets also contain ‘@’ signs more frequently, primarily because they 
+              tag the author of the news article in the tweet itself. We could not find a similar logic for the comparatively 
+              larger number of ‘#’s present in true tweets, but we believe that a deeper analysis can find an answer to that 
+              question.
             </p>
               
-            <p>
-            </p>          
+            <p>Let’s take a step back and reflect on what we have seen so far. We saw differences between true tweets and 
+              misinformation for the various factors we investigated, but were these findings significant? These differences 
+              could have arisen purely by chance. How can we guarantee that what we found just did not happen by accident? 
+              Although we can never be sure, math comes to help in making those decisions. We employed hypothesis testing 
+              using various methods such as F-testing for the linear regression coefficients and z-tests for the quantitative 
+              series of data we have gathered to examine whether the differences observed between true tweets and misinformation 
+              are statistically significant. For the most part, our findings showed us that… Yes! The differences between true 
+              tweets and misinformation were indeed significant, with the only exception arising in the case of average word 
+              length, which showed a surprisingly similar distribution between fake and true news. Just to add, the results for 
+              the mood analysis were qualitative and visually too similar to suggest further searching for variation.
+            </p>
+              
+            <p>As the deadline drew closer, a mix of hope and desperation drew upon us. The differences between true and 
+              misleading tweets that we had found seemed highly interesting, but what if we could combine them to predict 
+              which tweets were true, and which were misleading? To do this, we decided on using two techniques known as 
+              linear regression, and logistic regression. These techniques take in some data, its parameters and its labels, 
+              and then try to form predictions on other similar data. We used a little over 75% of our tweets to train our two 
+              algorithms, and 25% to test the accuracy of our predictions. The results we achieved were surprisingly promising. 
+            </p>
+              
+            <p>On setting the right threshold, linear regression classified 80% of the fake tweets as fake, and 68% of the 
+              true tweets as true. Logistic regression gave us even better results, with 81% of fake tweets correctly 
+              classified, and 80% of the true ones correctly identified. This observation does indicate that our observed 
+              factors enable us to differentiate between true tweets and misinformation to a large extent. This brings us 
+              full circle, back to our main idea that beyond the content of the tweets itself, there are differences between 
+              true tweets and misinformation, there are perceptible and imperceptible differences — which helped us classify 
+              them with good accuracy.
+            </p>
           
              </div>
           </div>

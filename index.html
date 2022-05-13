@@ -206,14 +206,17 @@
               3000 true tweets and over 3000 false tweets to analyze.
             </p>
             
-            <p>First, we wanted a quick overview of our datasets to ascertain some immediate differences between true 
-              tweets and misleading ones. Going into the analysis, we expected that true tweets would contain more 
-              facts regarding the number of cases and reported deaths, while fake tweets would contain stronger, more 
+            <p>First, we wanted a quick overview of our datasets to ascertain some immediate differences between 
+              true tweets and misleading ones. First, we performed steps to remove stopwords such as ‘and’ or ‘he’, 
+              make everything lowercase, and combine versions of words such as ‘dying’, ‘died’, and ‘die’ into a 
+              single word - ‘die’. Going into the analysis, we expected that true tweets would contain more facts 
+              regarding the number of cases and reported deaths, while fake tweets would contain stronger, more 
               assertive language to shift the blame of the disease's destruction on the "other" group or political 
               party. As such, we looked at the words most frequently used across both true and misleading tweets. 
               To dive in deeper, we used a technique known as 
               <a href = “https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24”>LDA Topic Modelling</a>, 
               that helped us discover the common broad topics the datasets seemed to cover.
+
             </p>
             
                <!-- Topic Trends -->

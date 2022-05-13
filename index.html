@@ -287,7 +287,7 @@
                 <param name='display_spinner' value='yes' />
                 <param name='display_overlay' value='yes' />
                 <param name='display_count' value='yes' />
-                <param name='language' value='pt-BR' />
+                <param name='language' value='en-US' />
                 <param name='filter' value='publish=yes' />
               </object>
             </div>                
@@ -299,15 +299,21 @@
               scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
               vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
-            /*End of Sentiment Analysis*/
             
-            <p>Sentiments are hard to analyze with computers, no surprise at this point, but patterns are easy to be found. While trustworthy information will 
-              focus on numerical data and its interpretation, successful fake news will direct the blame to the ones you love to hate, or ignore the disease 
-              as a hoax created by this same group. Keywords are analyzed by searching the most common words in each database, and how different their frequency 
-              is in each set. Intuitively, if you are familiar with extremist speeches, the differences in vocabulary and focus should be painfully easy to 
-              imagine. Having this in mind, we verified if the data agreed with us.
+            
+            <p>As we hoped, there was a clear difference between true tweets and misleading ones in terms of the sentiments they 
+              were associated with. Tweets are short, with a limit of 280 characters. Although we found a pattern, shorter texts 
+              do not provide results as reliable as long articles. Better analyses necessitate better data, which is inherent in 
+              statistics. In order to acquire a better grasp of the emotional characteristics of various tweets, we opted to use 
+              Mood Analysis, which instead of categorizing tweets as positive or negative, categorizes the mood that the tweet 
+              conveys. This technique has also been used previously to show 
+              <a href = “https://www.sciencedirect.com/science/article/abs/pii/S187775031100007X”>important results</a> based just 
+              on analyzing tweets. We employed a mood analysis algorithm that categorized the mood into six categories: fatigue, 
+              vigor, confusion, tension, anger, and depression. The results were as follows:
             </p>
-               
+              
+              
+              
             <p>
               The next test that we used originates on a common idea: misinformation consumption appears associated with low levels of education. Although 
               misinformation may have less jargon to make it accessible to more people, education's link is more dubious. For this reason, we decided to test 
@@ -323,9 +329,6 @@
             </p>
             </div>
             
-            
-         
-          
           <!-- EHAH -->
             <div class='tableauPlaceholder' id='viz1652472773517' style='position: relative'>
               <noscript>
@@ -342,7 +345,7 @@
                 <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Im&#47;ImprovedEHAHComparision&#47;Dashboard1&#47;1.png' />
                 <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' /><param name='language' value='pt-BR' />
+                <param name='display_count' value='yes' /><param name='language' value='en-US' />
                 <param name='filter' value='publish=yes' />
               </object>
             </div>                
@@ -374,7 +377,7 @@
                 <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
                 <param name='display_count' value='yes' />
-                <param name='language' value='pt-BR' />
+                <param name='language' value='en-US' />
                 <param name='filter' value='publish=yes' />
               </object>
             </div>                

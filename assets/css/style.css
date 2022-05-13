@@ -246,6 +246,11 @@ header span {
   font-weight: bold;
 }
 
+/* Section Misinfo*/
+.misinfo__container {
+  width: 80rem;
+  margin-left: 5rem;
+}
 /* Section Theory*/
 
 .section__theory {

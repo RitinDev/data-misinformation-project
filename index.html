@@ -181,23 +181,28 @@
               not careful, we would poison the research before it even started. For this reason, we decided to invest time in 
               social media content, English-speaking Twitter specifically, as they are home to a large volume of misinformation 
               and fact-checked news trying to dominate the space.
-</p>
+            </p>
             
-            <p>A few days of work had passed. Government regulations kept getting relaxed as the numbers declined. We had a direction to follow. The questions 
-              are now what should we look for and how to find it? Misinformation databases are easy to find, but computers do not excel at processing human 
-              language, not even internet slang. Also, while factual news commonly appear under articles and mainstream media sites, fake news tend to spread 
-              on social media. This difference implies that they have different constraints even when there is no variation in content. If we were not careful, 
-              we would poison the research before it started. For this reason, we decided to invest time in social media content, English-speaking Twitter 
-              specifically, as they are home to a large volume of misinformation and fact-checked news trying to dominate the space.
+            <p>A few days of work had passed. Government regulations kept getting relaxed as the numbers declined. We had a 
+              direction to follow and we finally had a thesis. The question now was what to look for and how to find it? 
+              Misinformation databases were easy to find because of the sheer volume of damaging content on the internet, but 
+              computers do not excel at processing human language, let alone internet slang. Also, while factual news commonly 
+              appears under articles and mainstream media sites, fake news tends to spread on social media. This difference 
+              implies that they have different constraints even when there is no variation in content. If we were not careful, 
+              we would poison the research before it even started. For this reason, we decided to invest time in social media 
+              content, English-speaking Twitter specifically, as they are home to a large volume of misinformation and 
+              fact-checked news trying to dominate the space.
+</p> 
               
-            </p> 
-            <p>The first elements we looked for were fearmongering and enraging content. Manipulating feeling is an old tactic for social media, and Facebook 
-              even revealed to engage users by making them angry in leaked papers. Whether you agree or not with the content, you will pay attention to it and 
-              spread it to more people. It is a win-win situation for the publisher, and the only way to stop it is by using the old internet adage "do not 
-              feed the trolls." But for us trying to identify fake content, this is also very useful. Some tools classify text according to its supposed emotional
-              content. They work by assigning values to words according to content pre-classified by humans. The first tool we tested was sentiment analysis 
-              algorithms, which seems like an oxymoron. The one we used to classify text between positive, negative, or neutral. We should then expect more negative
-              content under the fake news database and more neutral tones in the truthful set. This is what we found:
+            <p>Our initial problem was deciding which type of content to evaluate. We originally intended to examine long-form 
+              English articles.The database we found had links to both real and fake news stories. While there were a number of 
+              links to long-form pieces, many of those links were either defunct or linked to fact-checking websites that did 
+              not provide links to the source material. After a bit more digging, we uncovered a thorough dataset compiled by 
+              independent researchers for the Association for the Advancement of Artificial Intelligence (AAAI) to classify 
+              tweets into true news and misinformation.We also filtered out English tweets from 
+              <a href = “https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset”>Princeton’s ESOC COVID-19 Misinformation Dataset</a>, 
+              used the Twitter API to scrape their text, and added them to the false news database. Now, we had over 3000 true 
+              tweets and over 3000 false tweets to analyze.
             </p>
             
             <p>Tweets are short, with a limit of 280 characters. Although we found a pattern, shorter texts do not provide results as reliable as long articles. 

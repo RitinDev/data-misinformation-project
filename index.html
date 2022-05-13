@@ -66,29 +66,30 @@
         <!-- SECTION CONTENT -->
         <div class="article__content">
           <div class="article--center">
-            <p> NYUAD, Abu Dhabi — We spent the day thinking about what relevant data we could analyze. We had to decide 
-              what to write soon, and were left scratching our heads because the possibilities seemed endless. After 
-              considering our options, we decided to take on a topic which thousands have deliberated on over the last 
-              two years: Covid-19 related misinformation. A collection of viruses known as Sars-CoV-2, or Covid-19, was 
-              responsible for a worldwide pandemic. In some way, this epidemic affected every country, industry, and 
-              individual. And now that the epidemic is nearing its end, we can properly evaluate the secondary components 
-              of this historical event, particularly those that no vaccine or medicine could prevent.
+            <p> NYUAD, Abu Dhabi — We spent the day thinking about what relevant data we could analyze. We had to decide
+              what to write soon and were left scratching our heads because the possibilities seemed endless. After 
+              considering our options, we decided to take on a topic that thousands have deliberated on over the last 
+              two years: CCovid-19-related misinformation. A collection of viruses known as Sars-CoV-2, or Covid-19, 
+              was responsible for a worldwide pandemic. In some way, this epidemic affected every country, industry, 
+              and individual. And now that the epidemic is nearing its end, we can properly evaluate the secondary 
+              components of this historical event, particularly those that no vaccine or medicine could prevent.
              </p>
             
             <p>One of the most striking aspects of this pandemic was the simultaneous spread of both the disease and 
-              misinformation about it. While the pandemic spread quickly over the world, misconceptions about it circulated 
-              just as quickly on the internet. Countries with generally well-equipped health-care systems briefly collapsed 
-              due to the inability to treat so many afflicted citizens. Despite seeing close relatives succumb to the disease, 
-              many downplayed the matter and maintained themselves in isolated echo chambers.
+              misinformation about it. While the pandemic spread quickly over the world, misconceptions about it 
+              circulated just as quickly on the internet. Countries with generally well-equipped health-care systems 
+              briefly collapsed due to the inability to treat so many afflicted citizens. Despite seeing close 
+              relatives succumb to the disease, many downplayed the matter and maintained themselves in isolated 
+              echo chambers.
             </p>
             
-            <p>But how can blatantly wrong information be accepted as the truth? Fake news would have faded away if it was 
-              based solely on fabricated stories, like other online conspiracies. Notwithstanding this, governments relied 
-              on misinformation campaigns to steer their policy throughout the pandemic because they were so convincing 
-              and effective. How did we get to this level? As all four of us come from countries heavily affected by the 
-              pandemic, we decided to dig deeper into the issue of Covid-19 related misinformation. According to 
-              <a href = “https://www.nature.com/articles/s44159-021-00006-y”>a study</a> on misinformation, six elements 
-              make fake news especially attractive to the public:
+            <p>But how can blatantly wrong information be accepted as the truth? Fake news would have faded away if 
+              it was based solely on fabricated stories, like other online conspiracies. Notwithstanding this, 
+              governments relied on misinformation campaigns to steer their policy throughout the pandemic because 
+              they were so convincing and effective. How did we get to this level? As all four of us come from 
+              countries heavily affected by the pandemic, we decided to dig deeper into the issue of Covid-19-related 
+              misinformation. According to <a href = “https://www.nature.com/articles/s44159-021-00006-y”>a study</a> 
+              on misinformation, six elements make fake news especially attractive to the public:
             </p>
             
             <section class="section__theory">
@@ -160,10 +161,11 @@
               </div>
               <br style="clear:left;"/>
 
-            
              </div>
             </section>
             <div>
+            <br><hr>
+              
               <h2>How to identify fake news?</h2>
             
             <p>Upon reading the paper, it became easier to understand how fake news could become so popular. Misinformation 
@@ -172,12 +174,12 @@
               use that knowledge to make decisions.
             </p>
               
-            <p>Although the predicament was grim, our newly formed group asked: What can we do? If fake content seemed hard 
-              to dissociate from, maybe we needed to know how to identify misinformation in a way independent of the content. 
-              Also, legitimate information has not been as effective in fighting for space in popular beliefs. Perhaps most 
-              official sources were missing some factors that made misinformation popular. Such questions pointed us to one 
-              thesis: fake news propagation is fundamentally different from mainstream tested information, not only in content 
-              but also in the form, in perceptible and imperceptible ways.
+            <p>Although the predicament was grim, our newly formed group asked: What can we do? If fake content seemed 
+              hard to dissociate from, maybe we needed to know how to identify misinformation in a way independent of 
+              the content. Also, legitimate information has not been as effective in fighting for space in popular 
+              beliefs. Perhaps most official sources were missing some of the factors that made misinformation popular. 
+              Such questions point us to one thesis: fake news propagation is fundamentally different from mainstream 
+              tested information, not only in content but also in form, in perceptible and imperceptible ways.
             </p>
               
             <p>Government regulations kept getting relaxed as the numbers declined. We had a direction to follow and we 
@@ -193,13 +195,13 @@
             </p>
               
             <p>Our initial problem was deciding which type of content to evaluate. We originally intended to examine 
-              long-form English articles.The database we found had links to both real and fake news stories. While 
-              there were a number of links to long-form pieces, many of those links were either defunct or linked to 
+              long-form English articles. The database we found had links to both real and fake news stories. While 
+              there were many links to long-form pieces, many of those links were either defunct or linked to 
               fact-checking websites that did not provide links to the source material. After a bit more digging, we 
               uncovered a thorough <a href = “https://github.com/diptamath/covid_fake_news”>dataset</a> compiled by 
               independent researchers for the Association for the Advancement of Artificial Intelligence (AAAI) to 
-              classify tweets into true news and misinformation.We also filtered out English tweets from 
-              <a href = “https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset”>Princeton’s ESOC COVID-19 Misinformation Dataset</a>,
+              classify tweets into true news and misinformation. We also filtered out English tweets from 
+              <a href = “https://esoc.princeton.edu/publications/esoc-covid-19-misinformation-dataset”>Princeton’s ESOC COVID-19 Misinformation Dataset</a>, 
               used the Twitter API to scrape their text, and added them to the false news database. Now, we had over 
               3000 true tweets and over 3000 false tweets to analyze.
             </p>
@@ -207,9 +209,9 @@
             <p>First, we wanted a quick overview of our datasets to ascertain some immediate differences between true 
               tweets and misleading ones. Going into the analysis, we expected that true tweets would contain more 
               facts regarding the number of cases and reported deaths, while fake tweets would contain stronger, more 
-              assertive language to shift the blame of the disease's destruction on the "other" group or political party. 
-              As such, we looked at the words most frequently used across both true and misleading tweets. To dive in deeper, 
-              we used a technique known as 
+              assertive language to shift the blame of the disease's destruction on the "other" group or political 
+              party. As such, we looked at the words most frequently used across both true and misleading tweets. 
+              To dive in deeper, we used a technique known as 
               <a href = “https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24”>LDA Topic Modelling</a>, 
               that helped us discover the common broad topics the datasets seemed to cover.
             </p>
@@ -247,29 +249,31 @@
               vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
             
+              <br>≺br><br>
               
-            <p>Much like we expected, words like ‘case’ and ‘report’ abounded in the true dataset, whereas the fake dataset 
-              contained stronger  words such as ‘claim’, and the name of the former U.S. president ‘Trump’. The topic models 
-              also showed us interesting clusters of information, and we realized facts like perhaps a large amount of our 
-              data was taken from an Indian audience. Overall, the topic models showed us an important and perceptible way 
-              how misinformation was different from true information: the difference lay in the content itself. Now, we wanted 
-              to go further.
+            <p>Much like we expected, words like ‘case’ and ‘report’ abounded in the true dataset, whereas the fake 
+              dataset contained stronger words such as ‘claim’, and the name of the former U.S. president ‘Trump’. 
+              The topic models also showed us interesting clusters of information, and we realized facts like perhaps 
+              a large amount of our data was taken from an Indian audience. Overall, the topic models showed us an 
+              important and perceptible way how misinformation was different from true information: the difference lay 
+              in the content itself. Now, we wanted to go further.
             </p>
             
-            <p>We had seen from experience the power of fear mongering and enraging content. Manipulating feelings was an old 
-              tactic for social media, and Facebook even 
+            <p>We had seen from experience the power of fear-mongering and enraging content. Manipulating feelings 
+              was an old tactic for social media, and Facebook even 
               <a href = “https://www.nytimes.com/live/2021/10/05/technology/facebook-whistleblower-frances-haugen”>revealed</a> 
-              to engage users by making them angry in leaked papers. Whether one agreed with the content or not, they would pay 
-              attention to it and share it with others. It is a win-win situation for the publisher, and the only way to stop it 
-              is by using the old internet adage "do not feed the trolls." But for us trying to identify fake content, this rage 
-              is also very useful. Some tools classify text according to its supposed emotional content. They work by assigning 
-              values to words according to content pre-classified by humans. The first tool we tested was a sentiment analysis 
-              algorithm, which seems like an oxymoron the first time you hear about it. The one we used classifies text between 
-              positive, negative, or neutral by giving values to each word on the text. While we initially expected tweets to be 
-              too short to conduct such analysis on, we discovered this had been done before
-              <a href = “http://www.cs.columbia.edu/~julia/papers/Agarwaletal11.pdf”>successfully</a>. Starting off now, we 
-              expected more negative content under the fake news database and more neutral tones in the truthful set. This is what 
-              we found:
+              to engage users by making them angry in leaked papers. Whether one agreed with the content or not, 
+              they would pay attention to it and share it with others. It is a win-win situation for the publisher, 
+              and the only way to stop it is by using the old internet adage "do not feed the trolls." But for us 
+              trying to identify fake content, this rage is also very useful. Some tools classify text according 
+              to its supposed emotional content. They work by assigning values to words according to content 
+              pre-classified by humans. The first tool we tested was a sentiment analysis algorithm, which seems 
+              like an oxymoron the first time you hear about it. The one we used classifies text between positive, 
+              negative, or neutral by giving values to each word in the text. While we initially expected tweets to 
+              be too short to conduct such analysis on, we discovered this had been done before
+              <a href = “http://www.cs.columbia.edu/~julia/papers/Agarwaletal11.pdf”>successfully</a>. 
+              Starting now, we expected more negative content under the fake news database and more neutral tones 
+              in the truthful set. This is what we found:
             </p>
               
               <!-- Sentiment Analysis -->
@@ -304,31 +308,34 @@
               vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
             
-            
-            <p>As we hoped, there was a clear difference between true tweets and misleading ones in terms of the sentiments 
-              they were associated with. Tweets are short, with a limit of 280 characters. Although we found a pattern, 
-              shorter texts do not provide results as reliable as long articles. Better analyses necessitate better data, 
-              which is inherent in statistics. In order to acquire a better grasp of the emotional characteristics of 
-              various tweets, we opted to use Mood Analysis, which instead of categorizing tweets as positive or negative, 
-              categorizes the mood that the tweet conveys. This technique has also been used previously to show 
-              <a href = “https://www.sciencedirect.com/science/article/abs/pii/S187775031100007X”>important results</a> based 
-              just on analyzing tweets. We employed a mood analysis algorithm that categorized the mood into six categories: 
-              fatigue, vigor, confusion, tension, anger, and depression. Surprisingly, the results for this analysis turned 
-              out to be pretty much the same for both our datasets. The greatest number of tweets were classified as "depression" 
-              in both classifications, which is to be expected considering how gloomy the pandemic has been. A large number of 
-              tweets may be labeled "depressing" because of the prevalence of grim words such as "death", "die" and so on. 
-              However, the similar distributions on this analysis, when compared to our initial sentiment analysis, goes to 
-              show that the research needs more work, and a lot of the results come down to the different ways similar 
-              algorithms work. 
+            <br><br><br>
+              
+            <p>As we hoped, there was a clear difference between true tweets and misleading ones in terms of the
+              sentiments they were associated with. Tweets are short, with a limit of 280 characters. Although 
+              we found a pattern, shorter texts do not provide results as reliable as long articles. Better 
+              analyses necessitate better data, which is inherent in statistics. In order to acquire a better
+              grasp of the emotional characteristics of various tweets, we opted to use Mood Analysis, which 
+              instead of categorizing tweets as positive or negative, categorizes the mood that the tweet conveys. 
+              This technique has also been used previously to show 
+              <a href = “https://www.sciencedirect.com/science/article/abs/pii/S187775031100007X”>important results</a> 
+              based just on analyzing tweets. We employed a mood analysis algorithm that categorized the mood into 
+              six categories: fatigue, vigor, confusion, tension, anger, and depression. Surprisingly, the results 
+              for this analysis turned out to be pretty much the same for both datasets. The greatest number of 
+              tweets were classified as "depression" in both classifications, which is to be expected considering 
+              how gloomy the pandemic has been. A large number of tweets may be labeled "depressing" because of the 
+              prevalence of grim words such as "death", "die" and so on. However, the similar distributions in this
+              analysis, when compared to our initial sentiment analysis, go to show that the research needs more work, 
+              and a lot of the results come down to the different ways similar algorithms work. 
             </p>
              
             <p>
-              When it comes to misinformation consumption, a common but dubious claim is that misinformation consumption is 
-              associated with low levels of education. Since it is plausible that misinformation may have less jargon to make 
-              it accessible to more people, we decided to put this hypothesis to the test. We used the LIX index to evaluate 
-              how difficult a text is to comprehend. The LIX index examines word and sentence length and assigns a value to a 
-              text without taking its content into account. As a measure of readability, we also compared the true and fake on 
-              factors such as word count, average word length, and % of unique words.
+              When it comes to misinformation consumption, a common but dubious claim is that misinformation 
+              consumption is associated with low levels of education. Since it is plausible that misinformation 
+              may have less jargon to make it accessible to more people, we decided to put this hypothesis to 
+              the test. We used the LIX index to evaluate how difficult a text is to comprehend. The LIX index 
+              examines word and sentence length and assigns a value to a text without taking its content into 
+              account. As a measure of readability, we also compared the true and false tweets on factors such 
+              as word count, average word length, and % of unique words.
             </p>
             
               <!-- Readability -->
@@ -359,24 +366,26 @@
               scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
               vizElement.parentNode.insertBefore(scriptElement, vizElement);
             </script>
+              
+              <br><br><br>
              
             <p>We discovered the most interesting results when looking at word counts, where the number of fake 
-              tweets having less than 30 words was almost double the amount of true tweets for the same criteria. 
+              tweets having less than 30 words was almost double the number of true tweets for the same criteria. 
               This could potentially mean that fake tweets were designed to be shorter for a purpose, whereas true 
               tweets would attempt to present all the information. Similarly, the % of unique words also showed a 
-              significant difference. Other factors such as the LIX index however, showed quite similar results. We 
-              realized that this could have been due to the fact that Tweets wein general are quite similar to each 
-              other in the factors the LIX index considered. In our search for possible reasons, we found a 
+              significant difference. Other factors such as the LIX index, however, showed quite similar results. 
+              We realized that this could have been since Tweets in general are quite similar to each other in the 
+              factors the LIX index considered. In our search for possible reasons, we found a 
               <a href=“https://aclanthology.org/U19-1003.pdf”>study</a> that compared results from readability 
               indices and labels given by users having English as their second language, that found exactly that. 
             </p>
               
-            <p>Moving on, we tried to come up with even more factors. We had done textual analysis, but missed the 
-              fact that since tweets have a restriction on the number of characters used, there are other ways to 
-              transmit information in this limited environment. Specifically, tweets were different than normal 
-              texts in the fact that they made extensive use of parts such as ‘@’s when mentioning someone, 
-              ‘#’s when discussing a topic, hyperlinks when redirecting somewhere else, and emojis when trying to 
-              express an emotion.
+            <p>Moving on, we tried to come up with even more factors. We had done the textual analysis but missed 
+              the fact that since tweets have a restriction on the number of characters used, there are other ways 
+              to transmit information in this limited environment. Specifically, tweets were different than normal 
+              texts in the fact that they made extensive use of parts such as ‘@’s when mentioning someone, ‘#’s 
+              when discussing a topic, hyperlinks when redirecting somewhere else, and emojis when trying to express 
+              an emotion.
             </p>
               
               <!-- EHAH -->

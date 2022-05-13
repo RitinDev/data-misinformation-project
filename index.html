@@ -180,14 +180,16 @@
               the form, in perceptible and imperceptible ways.
             </p>
               
-            <p>Government regulations kept getting relaxed as the numbers declined. We had a direction to follow and we finally
+            <p>Government regulations kept getting relaxed as the numbers declined. We had a direction to follow and we finally 
               had a thesis. The question now was what to look for and how to find it? Misinformation databases were easy to find 
               because of the sheer volume of damaging content on the internet. While factual news commonly appears under articles 
               and mainstream media sites, fake news tends to spread on social media. This difference implies that they have 
-              different constraints even when there is no variation in content. If we were not careful, we would poison the 
-              research before it even started. For this reason, we decided to invest time in social media content, English-speaking 
-              Twitter specifically, as they are home to a large volume of misinformation and fact-checked news trying to dominate 
-              the space.
+              different constraints even when there is no variation in content. The number of characters used, the level of 
+              formality, and the quality of sources are strikingly different between a successful article and a popular tweet. 
+              If we were not careful, we would detect differences that exist due to the channel used to transmit information 
+              rather than the context and content.  For this reason, we decided to invest time in social media content, 
+              English-speaking Twitter specifically, as they are home to a large volume of misinformation and fact-checked 
+              news trying to dominate the space.
             </p>
               
             <p>Our initial problem was deciding which type of content to evaluate. We originally intended to examine long-form 
@@ -201,10 +203,13 @@
               tweets and over 3000 false tweets to analyze.
             </p>
             
-            <p>First, we wanted an overview of our datasets we looked at, so we looked at the most frequent words used. To dive 
-              in deeper, we used a technique known as 
-              <a href = “https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24”>LDA Topic Modelling</a>
-              , that helped us discover the common broad topics the datasets seemed to cover.
+            <p>First, we wanted a quick overview of our datasets to ascertain some immediate differences between true tweets 
+              and misleading ones. Going into the analysis, we expected that true tweets would contain more facts regarding 
+              the number of cases and reported deaths, while fake tweets would contain stronger, more assertive language to 
+              shift the blame of the disease's destruction on the "other" group or political party. As such, we looked at 
+              the words most frequently used across both true and misleading tweets. To dive in deeper, we used a technique 
+              known as <a href = “https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24”>LDA Topic Modelling</a>, 
+              that helped us discover the common broad topics the datasets seemed to cover.
             </p>
             
                <!-- Topic Trends -->

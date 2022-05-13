@@ -248,9 +248,10 @@ header span {
 
 /* Section Misinfo*/
 .misinfo__container {
-  width: 100rem;
-  margin-left: 5rem;
+  width: 90rem;
+ /* margin-left: 5rem;*/ 
 }
+
 /* Section Theory*/
 
 .section__theory {
